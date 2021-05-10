@@ -1,0 +1,407 @@
+@import url(../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css);
+@import url(owl.carousel.min.css);
+@import url(owl.theme.default.min.css);
+@import url(animate.min.css);
+@import url(hover.css);
+@import url(style.css);
+@font-face {
+  font-family: 'Georgia';
+  src: url("../fonts/Georgia.eot");
+  src: url("../fonts/Georgia.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia.woff2") format("woff2"), url("../fonts/Georgia.woff") format("woff"), url("../fonts/Georgia.ttf") format("truetype"), url("../fonts/Georgia.svg#Georgia") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  * ul {
+    list-style: none; }
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Georgia"; }
+  .main .header {
+    border-top: solid 5px #a7c353;
+    background-color: #ffffff; }
+    .main .header .header-wrap {
+      border-bottom: solid 1px #a7c353;
+      max-width: 920px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .main .header .header-wrap .header-logo__title {
+        text-transform: uppercase;
+        font-family: "Georgia";
+        font-size: 26px;
+        line-height: 24px;
+        color: #666666;
+        margin-bottom: 0; }
+        .main .header .header-wrap .header-logo__title::first-letter {
+          font-size: 32px; }
+      .main .header .header-wrap .header-logo__text {
+        color: #888888;
+        font-size: 12px; }
+      .main .header .header-wrap .header-nav__item {
+        list-style: none;
+        display: inline-block;
+        cursor: pointer; }
+        .main .header .header-wrap .header-nav__item:hover {
+          height: 100%;
+          background-color: #a7c353;
+          color: red; }
+      .main .header .header-wrap .header-nav__link {
+        display: block;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #888888;
+        font-size: 13px;
+        padding: 54px 20px 37px 20px; }
+  .main .slider {
+    background-color: #ffffff;
+    padding: 50px 0 0 0; }
+    .main .slider .slider-wrap {
+      max-width: 920px;
+      margin: auto; }
+    .main .slider .slider-title {
+      font-size: 21px;
+      line-height: 30px;
+      text-align: center;
+      color: #666666;
+      font-style: italic;
+      margin-bottom: 45px; }
+    .main .slider .carousel-item1 {
+      position: relative;
+      max-width: 920px;
+      margin: auto;
+      height: 320px;
+      background-image: url("../images/sl_1.jpg");
+      background-position: center right;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .main .slider .carousel-item2 {
+      position: relative;
+      max-width: 920px;
+      margin: auto;
+      height: 320px;
+      background-image: url("../images/sl_2.jpg");
+      background-position: center right;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .main .slider .carousel-item3 {
+      position: relative;
+      max-width: 920px;
+      margin: auto;
+      height: 320px;
+      background-image: url("../images/sl_3.jpg");
+      background-position: center right;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .main .slider .carousel-item4 {
+      position: relative;
+      max-width: 920px;
+      margin: auto;
+      height: 320px;
+      background-image: url("../images/sl_4.jpg");
+      background-position: center right;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .main .slider .carousel-item5 {
+      position: relative;
+      max-width: 920px;
+      margin: auto;
+      height: 320px;
+      background-image: url("../images/sl_5.jpg");
+      background-position: center right;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .main .slider .slider-text_wrap {
+      max-width: 351px;
+      position: absolute;
+      right: 8%;
+      bottom: 10%; }
+      @media screen and (max-width: 576px) {
+        .main .slider .slider-text_wrap {
+          text-align: center;
+          margin: 0 auto; } }
+      .main .slider .slider-text_wrap .slider-text {
+        background-color: #a7c353;
+        color: #ffffff;
+        font-size: 22px;
+        line-height: 30px;
+        padding: 0 22px;
+        margin-bottom: 13px; }
+      .main .slider .slider-text_wrap .slider-info {
+        background-color: #ffffff;
+        font-size: 13px;
+        line-height: 16px;
+        color: #999999;
+        padding: 0 13px; }
+    @media screen and (max-width: 768px) {
+      .main .slider .owl-nav {
+        display: none; } }
+    .main .slider .owl-nav .owl-next::after {
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      display: block;
+      border: 3px solid #a7c353;
+      border-radius: 50%;
+      background-color: #313131;
+      color: #a7c353;
+      position: absolute;
+      right: 13%;
+      top: 39%;
+      content: ">";
+      font-size: 36px;
+      line-height: 44px;
+      font-weight: 700; }
+    .main .slider .owl-nav .owl-prev::before {
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      display: block;
+      border: 3px solid #a7c353;
+      border-radius: 50%;
+      background-color: #313131;
+      color: #a7c353;
+      position: absolute;
+      left: 13%;
+      top: 39%;
+      content: "<";
+      font-size: 36px;
+      line-height: 44px;
+      font-weight: 700; }
+    .main .slider .owl-dots {
+      text-align: center;
+      outline: none !important; }
+      @media screen and (max-width: 768px) {
+        .main .slider .owl-dots {
+          margin-top: 20px; } }
+      .main .slider .owl-dots .owl-dot {
+        outline: none !important; }
+        .main .slider .owl-dots .owl-dot span {
+          width: 15px;
+          height: 15px;
+          background-color: #a7c353;
+          border-radius: 50%;
+          display: inline-block;
+          margin: 0 5px; }
+    .main .slider .owl-dots .owl-dot.active span {
+      width: 15px;
+      height: 15px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      border: solid 3px #a7c353;
+      display: inline-block; }
+  .main .content {
+    padding: 45px 0 40px;
+    background-color: #ffffff; }
+    .main .content .content-wrap {
+      display: flex;
+      border-top: solid 1px #e2e2e2;
+      max-width: 920px;
+      margin: auto; }
+      @media screen and (max-width: 768px) {
+        .main .content .content-wrap {
+          padding: 15px;
+          flex-wrap: wrap; } }
+      .main .content .content-wrap .content-item {
+        max-width: 280px; }
+        @media screen and (max-width: 710px) {
+          .main .content .content-wrap .content-item {
+            flex-direction: row; } }
+      .main .content .content-wrap .content-item_center {
+        max-width: 280px;
+        margin: 0 40px; }
+        @media screen and (max-width: 576px) {
+          .main .content .content-wrap .content-item_center {
+            margin: 0; } }
+      .main .content .content-wrap .content-title {
+        margin: 40px 0 35px;
+        font-size: 22px;
+        line-height: 26px;
+        color: #666666; }
+      .main .content .content-wrap .content-img {
+        padding: 5px;
+        background-color: #ffffff;
+        border: solid 1px #e2e2e2;
+        margin-bottom: 25px; }
+      .main .content .content-wrap .content-text {
+        margin-bottom: 27px;
+        color: #999999;
+        font-size: 13px;
+        line-height: 18px; }
+      .main .content .content-wrap .content-link {
+        display: block;
+        color: #a7c353;
+        text-decoration: none;
+        font-size: 13px;
+        line-height: 13px;
+        text-align: end; }
+      .main .content .content-wrap .content-servis__block {
+        display: flex;
+        margin-bottom: 20px; }
+        .main .content .content-wrap .content-servis__block .content-servis__title {
+          font-size: 14px;
+          color: #999999;
+          margin-bottom: 12px; }
+      .main .content .content-wrap .wrap-block {
+        margin-left: 20px; }
+      .main .content .content-wrap .client-title {
+        font-size: 16px;
+        line-height: 16px;
+        color: #999999;
+        margin-bottom: 13px; }
+        .main .content .content-wrap .client-title:before {
+          display: inline-block;
+          color: #999999;
+          content: url("../images/quotes.png");
+          position: relative;
+          margin-right: 15px;
+          top: 15px; }
+  .main .contacts {
+    background-color: #313131;
+    padding: 42px 0 44px;
+    display: flex;
+    justify-content: space-between; }
+    .main .contacts .contacts-title {
+      padding-bottom: 15px;
+      font-size: 16px;
+      line-height: 19px;
+      color: #ffffff;
+      margin-bottom: 42px;
+      border-bottom: solid 1px #3a3a3a; }
+    .main .contacts .about-company {
+      max-width: 960px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between; }
+      @media screen and (max-width: 991px) {
+        .main .contacts .about-company {
+          flex-wrap: wrap;
+          justify-content: center; }
+          .main .contacts .about-company .contacts-item__company {
+            width: 25%;
+            margin-bottom: 30px; } }
+  @media screen and (max-width: 991px) and (max-width: 768px) {
+    .main .contacts .about-company .contacts-item__company {
+      flex-wrap: nowrap;
+      width: 50%; } }
+
+      .main .contacts .about-company .contacts-item__company {
+        margin-right: 20px;
+        width: 225px;
+        font-size: 12px;
+        line-height: 19px;
+        color: #888888; }
+        .main .contacts .about-company .contacts-item__company .company-contacts {
+          margin-top: 25px;
+          margin-bottom: 25px;
+          list-style: none; }
+          .main .contacts .about-company .contacts-item__company .company-contacts .company-link_email {
+            color: #a7c353;
+            text-decoration: none; }
+            .main .contacts .about-company .contacts-item__company .company-contacts .company-link_email:hover {
+              color: #ffffff; }
+              .main .contacts .about-company .contacts-item__company .company-contacts .company-link_email:hover:active {
+                color: red; }
+        .main .contacts .about-company .contacts-item__company .company-hours .company-text .company-text:first-child {
+          font-weight: bold; }
+      .main .contacts .about-company .contacts-item__company {
+        width: 230px;
+        margin-right: 20px; }
+        .main .contacts .about-company .contacts-item__company .icon-social {
+          border-bottom: solid 1px #3a3a3a;
+          padding-bottom: 7px;
+          text-decoration: none;
+          color: #a7c353;
+          margin-bottom: 23px; }
+          .main .contacts .about-company .contacts-item__company .icon-social .icon-social_text {
+            text-decoration: none;
+            color: #a7c353;
+            margin-bottom: 23px; }
+            .main .contacts .about-company .contacts-item__company .icon-social .icon-social_text:hover {
+              color: #ffffff; }
+          .main .contacts .about-company .contacts-item__company .icon-social .social-link {
+            border-bottom: solid 1px #3a3a3a;
+            padding-bottom: 7px;
+            margin-right: 11px;
+            display: inline-block;
+            width: 33px;
+            height: 33px;
+            border-radius: 50%;
+            background-color: #383838;
+            color: #ffffff;
+            line-height: 33px;
+            text-align: center; }
+            .main .contacts .about-company .contacts-item__company .icon-social .social-link:hover {
+              background-color: #ffffff;
+              color: #a7c353; }
+      .main .contacts .about-company .contacts-item__company {
+        width: 225px;
+        margin-right: 20px; }
+        .main .contacts .about-company .contacts-item__company .article-title {
+          font-size: 13px;
+          color: #999999;
+          margin-bottom: 11px;
+          font-weight: bold; }
+        .main .contacts .about-company .contacts-item__company .article-date {
+          font-size: 11px;
+          color: #999999;
+          margin-bottom: 11px; }
+        .main .contacts .about-company .contacts-item__company .article-text {
+          font-size: 11px;
+          color: #999999;
+          margin-bottom: 20px;
+          line-height: 13px; }
+        .main .contacts .about-company .contacts-item__company .article-link {
+          text-align: right;
+          text-decoration: none;
+          color: #a7c353;
+          font-size: 12px;
+          line-height: 14px;
+          display: block; }
+          .main .contacts .about-company .contacts-item__company .article-link:hover {
+            color: #ffffff; }
+      .main .contacts .about-company .contacts-item__company {
+        width: 225px; }
+        .main .contacts .about-company .contacts-item__company .input {
+          width: 100%;
+          background-color: #383838;
+          border: none;
+          margin-bottom: 10px;
+          padding: 10px;
+          border-radius: 5px;
+          resize: none; }
+          .main .contacts .about-company .contacts-item__company .input :focus {
+            outline-style: none;
+            outline-width: 0px !important; }
+        .main .contacts .about-company .contacts-item__company .button {
+          padding: 10px;
+          border: none;
+          background-color: #a7c353;
+          border-radius: 7px;
+          cursor: pointer; }
+          .main .contacts .about-company .contacts-item__company .button:hover {
+            background-color: #ffffff; }
+  .main .footer {
+    background-color: #313131; }
+    .main .footer .footer-wrap {
+      padding: 24px 0;
+      display: flex;
+      justify-content: space-between;
+      max-width: 960px;
+      margin: auto;
+      border-top: solid 1px #3a3a3a; }
+      .main .footer .footer-wrap .footer-info {
+        font-size: 12px;
+        color: #999999; }
+      @media screen and (max-width: 576px) {
+        .main .footer .footer-wrap {
+          flex-wrap: wrap;
+          justify-content: center; } }
+
+/*# sourceMappingURL=style_prepros.css.map */

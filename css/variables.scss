@@ -1,0 +1,33 @@
+@mixin max-screen($number) {
+  @media screen and (max-width: $number) {
+    @content;
+  }
+}
+
+@mixin min-screen($number) {
+  @media screen and (min-width: $number) {
+    @content;
+  }
+}
+@mixin main{
+  max-width: 1200px;
+  margin: auto;
+  font-family: $fontFamile;
+}
+@mixin wrap{
+  max-width: 920px;
+  margin: auto;
+}
+@mixin wrapBig{
+  max-width: 960px;
+  margin: auto;
+}
+$backgroundLight:#ffffff;
+$backgroundNight:#313131;
+$colorGreen:#a7c353;
+$colorTitle:#666666;
+$colorText:#888888;
+$colorTextFooter:#999999;
+$fontFamile:'Georgia';
+$colorBorder:#3a3a3a;
+$colorIcon:#383838;

@@ -1,0 +1,621 @@
+@import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
+@import "owl.carousel.min.css";
+@import "owl.theme.default.min.css";
+@import "animate.min.css";
+@import "hover.css";
+@import "style.css";
+@import "variables";
+@font-face {
+  font-family: 'Georgia';
+  src: url('../fonts/Georgia.eot');
+  src: url('../fonts/Georgia.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Georgia.woff2') format('woff2'),
+  url('../fonts/Georgia.woff') format('woff'),
+  url('../fonts/Georgia.ttf') format('truetype'),
+  url('../fonts/Georgia.svg#Georgia') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  ul{
+    list-style: none;
+  }
+}
+
+
+
+.main {
+  @include main;
+
+  .header {
+
+    border-top: solid 5px $colorGreen;
+    background-color: $backgroundLight;
+
+    .header-wrap {
+      border-bottom: solid 1px $colorGreen;
+
+      @include wrap;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .header-logo__title {
+        text-transform: uppercase;
+        font-family: $fontFamile;
+        font-size: 26px;
+        line-height: 24px;
+        color: $colorTitle;
+        margin-bottom: 0;
+
+        &::first-letter {
+          font-size: 32px;
+        }
+
+      }
+
+      .header-logo__text {
+        color: $colorText;
+        font-size: 12px;
+      }
+
+      .header-nav__item {
+        list-style: none;
+        display: inline-block;
+        //margin-left: 43px;
+        cursor: pointer;
+
+        &:hover {
+          height: 100%;
+          background-color: $colorGreen;
+          color: red;
+
+
+        }
+
+
+      }
+
+      .header-nav__link {
+        display: block;
+        //height: 100%;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $colorText;
+        font-size: 13px;
+        padding: 54px 20px 37px 20px;
+
+
+      }
+
+
+    }
+
+  }
+
+
+  .slider {
+    background-color: $backgroundLight;
+    padding: 50px 0 0 0;
+
+
+
+    .slider-wrap {
+      @include wrap;
+    }
+
+
+      .slider-title {
+        font-size: 21px;
+        line-height: 30px;
+        text-align: center;
+        color: $colorTitle;
+        font-style: italic;
+        margin-bottom: 45px;
+
+      }
+
+      .carousel-item1 {
+        position: relative;
+        max-width: 920px;
+        margin: auto;
+        height: 320px;
+        background-image: url("../images/sl_1.jpg");
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+      }
+    .carousel-item2{
+      position: relative;
+      max-width: 920px;
+      margin: auto;
+      height: 320px;
+      background-image: url("../images/sl_2.jpg");
+      background-position: center right;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+    .carousel-item3{
+      position: relative;
+      max-width: 920px;
+      margin: auto;
+      height: 320px;
+      background-image: url("../images/sl_3.jpg");
+      background-position: center right;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+    .carousel-item4{
+      position: relative;
+      max-width: 920px;
+      margin: auto;
+      height: 320px;
+      background-image: url("../images/sl_4.jpg");
+      background-position: center right;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+    .carousel-item5{
+      position: relative;
+      max-width: 920px;
+      margin: auto;
+      height: 320px;
+      background-image: url("../images/sl_5.jpg");
+      background-position: center right;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+    .slider-text_wrap{
+      @include max-screen(576px){
+        text-align: center;
+        margin: 0 auto;
+      }
+      max-width: 351px;
+      position: absolute;
+      right: 8%;
+      bottom: 10%;
+      .slider-text{
+        background-color: $colorGreen;
+        color: $backgroundLight;
+        font-size: 22px;
+        line-height: 30px;
+        padding: 0 22px;
+        margin-bottom: 13px;
+      }
+      .slider-info{
+        background-color: $backgroundLight;
+        font-size: 13px;
+        line-height:16px;
+        color: $colorTextFooter;
+        padding: 0 13px;
+
+      }
+
+    }
+
+
+    .owl-nav {
+      @include max-screen(768px) {
+        display: none;
+      }
+
+      .owl-next {
+        &::after {
+          width: 50px;
+          height: 50px;
+          text-align: center;
+          display: block;
+          border: 3px solid $colorGreen;
+          border-radius: 50%;
+          background-color: $backgroundNight;
+          color: $colorGreen;
+          position: absolute;
+          right: 13%;
+          top: 39%;
+          content: ">";
+          font-size: 36px;
+          line-height: 44px;
+          font-weight: 700;
+
+
+        }
+
+      }
+
+      .owl-prev {
+        &::before {
+          width: 50px;
+          height: 50px;
+          text-align: center;
+          display: block;
+          border: 3px solid $colorGreen;
+          border-radius: 50%;
+          background-color: $backgroundNight;
+          color: $colorGreen;
+          position: absolute;
+          left: 13%;
+          top: 39%;
+          content: "<";
+          font-size: 36px;
+          line-height: 44px;
+          font-weight: 700;
+
+        }
+      }
+    }
+
+
+    .owl-dots {
+      @include max-screen(768px){
+        margin-top: 20px;
+      }
+      text-align: center;
+      outline: none !important;
+
+      .owl-dot {
+
+        outline: none !important;
+
+        span {
+          width: 15px;
+          height: 15px;
+          background-color: $colorGreen;
+          border-radius: 50%;
+          display: inline-block;
+          margin: 0 5px;
+
+
+        }
+      }
+    }
+
+
+    .owl-dots .owl-dot.active span {
+      width: 15px;
+      height: 15px;
+      background-color: $backgroundLight;
+      border-radius: 50%;
+      border: solid 3px $colorGreen;
+      display: inline-block;
+
+    }
+
+  }
+
+.content{
+
+  padding: 45px 0 40px;
+  background-color: $backgroundLight;
+
+  .content-wrap{
+    @include max-screen(768px){
+      padding: 15px;
+      flex-wrap: wrap;
+
+    }
+
+
+    display: flex;
+    border-top: solid 1px #e2e2e2;
+    @include wrap;
+
+    .content-item{
+
+      max-width: 280px;
+      @include max-screen(710px){
+        flex-direction: row;
+      }
+    }
+
+    .content-item_center{
+      max-width: 280px;
+      margin: 0 40px;
+      @include max-screen(576px){
+        margin: 0;
+      }
+    }
+    .content-title{
+      margin: 40px 0 35px;
+      font-size: 22px;
+      line-height: 26px;
+      color:$colorTitle;
+    }
+    .content-img{
+      padding: 5px;
+      background-color: $backgroundLight;
+      border: solid 1px #e2e2e2;
+      margin-bottom: 25px;
+
+    }
+    .content-text{
+      margin-bottom: 27px;
+      color: $colorTextFooter;
+      font-size: 13px;
+      line-height: 18px;
+    }
+    .content-link {
+      display: block;
+      color: $colorGreen;
+      text-decoration: none;
+      font-size: 13px;
+      line-height: 13px;
+      text-align: end;
+    }
+    .content-servis__block{
+      display: flex;
+      margin-bottom: 20px;
+      .content-servis__title{
+        font-size: 14px;
+        color: $colorTextFooter;
+        margin-bottom: 12px;
+      }
+    }
+    .wrap-block{
+
+      margin-left: 20px;
+
+    }
+    .client-title{
+      font-size: 16px;
+      line-height: 16px;
+      color: $colorTextFooter;
+      margin-bottom: 13px;
+      &:before{
+        display: inline-block;
+        color: $colorTextFooter;
+       content: url("../images/quotes.png");
+        position: relative;
+        margin-right: 15px;
+        top: 15px;
+      }
+    }
+
+
+  }
+
+
+}
+
+
+
+  .contacts {
+
+    background-color: $backgroundNight;
+    padding: 42px 0 44px;
+    display: flex;
+    justify-content: space-between;
+
+    .contacts-title {
+      padding-bottom: 15px;
+      font-size: 16px;
+      line-height: 19px;
+      color: $backgroundLight;
+      margin-bottom: 42px;
+      border-bottom: solid 1px $colorBorder;
+
+
+    }
+
+    .about-company {
+      @include max-screen(991px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        .contacts-item__company {
+          width: 25%;
+          margin-bottom: 30px;
+        }
+        @include max-screen(768px) {
+          .contacts-item__company {
+            flex-wrap: nowrap;
+            width: 50%;
+          }
+        }
+
+      }
+      @include wrapBig;
+      display: flex;
+      justify-content: space-between;
+
+      .contacts-item__company {
+        margin-right: 20px;
+        width: 225px;
+        font-size: 12px;
+        line-height: 19px;
+        color: $colorText;
+
+        .company-contacts {
+          margin-top: 25px;
+          margin-bottom: 25px;
+          list-style: none;
+
+          .company-link_email {
+            color: $colorGreen;
+            text-decoration: none;
+
+            &:hover {
+              color: $backgroundLight;
+
+              &:active {
+                color: red;
+              }
+            }
+          }
+        }
+
+        .company-hours {
+          .company-text {
+            .company-text:first-child {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .contacts-item__company {
+        width: 230px;
+        margin-right: 20px;
+
+
+        .icon-social {
+
+
+
+          border-bottom: solid 1px $colorBorder;
+          padding-bottom: 7px;
+          text-decoration: none;
+          color: $colorGreen;
+          margin-bottom: 23px;
+
+          .icon-social_text {
+            text-decoration: none;
+            color: $colorGreen;
+            margin-bottom: 23px;
+
+            &:hover {
+              color: $backgroundLight;
+            }
+          }
+
+          .social-link {
+            border-bottom: solid 1px $colorBorder;
+            padding-bottom: 7px;
+            margin-right: 11px;
+            display: inline-block;
+            width: 33px;
+            height: 33px;
+            border-radius: 50%;
+            background-color: $colorIcon;
+            color: $backgroundLight;
+            line-height: 33px;
+            text-align: center;
+
+            &:hover {
+              background-color: $backgroundLight;
+              color: $colorGreen;
+            }
+
+          }
+
+        }
+
+      }
+
+
+      .contacts-item__company {
+        width: 225px;
+        margin-right: 20px;
+
+        .article-title {
+          font-size: 13px;
+          color: $colorTextFooter;
+          margin-bottom: 11px;
+          font-weight: bold;
+        }
+
+        .article-date {
+          font-size: 11px;
+          color: $colorTextFooter;
+          margin-bottom: 11px;
+        }
+
+        .article-text {
+          font-size: 11px;
+          color: $colorTextFooter;
+          margin-bottom: 20px;
+          line-height: 13px;
+        }
+
+        .article-link {
+          text-align: right;
+          text-decoration: none;
+          color: $colorGreen;
+          font-size: 12px;
+          line-height: 14px;
+          display: block;
+
+          &:hover {
+            color: $backgroundLight;
+          }
+        }
+
+      }
+
+      .contacts-item__company {
+        width: 225px;
+
+        .input {
+          width: 100%;
+          background-color: #383838;
+          border: none;
+          margin-bottom: 10px;
+          padding: 10px;
+          border-radius: 5px;
+          resize: none;
+
+          :focus {
+            outline-style: none;
+            outline-width: 0px !important;
+          }
+        }
+
+        .button {
+          padding: 10px;
+          border: none;
+          background-color: #a7c353;
+          border-radius: 7px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $backgroundLight;
+          }
+        }
+
+
+      }
+
+
+    }
+
+  }
+
+
+  .footer {
+    background-color: $backgroundNight;
+
+
+    .footer-wrap {
+      padding: 24px 0;
+      display: flex;
+      justify-content: space-between;
+      @include wrapBig;
+      border-top: solid 1px $colorBorder;
+
+      .footer-info {
+        font-size: 12px;
+        color: $colorTextFooter;
+
+      }
+
+      @include max-screen(576px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+
+  }
+
+
+}
